@@ -1,0 +1,30 @@
+@each $size, $extension in $textExtensions {
+    .text--#{$extension},
+    .text--#{$extension} > p,
+    .text--#{$extension} > ol li,
+    .text--#{$extension} > ul li {
+      // Set font size
+      font-size: var(--text-#{$extension});
+
+      // Match line height and max-inline-size
+      @if $size == xs {
+        line-height: $text-xs-lh;
+        max-inline-size: $text-xs-length;
+      } @else if $size == s {
+        line-height: $text-s-lh;
+        max-inline-size: $text-s-length;
+      } @else if $size == m {
+        line-height: $base-text-lh;
+        max-inline-size: $text-line-length;
+      } @else if $size == l {
+        line-height: $text-l-lh;
+        max-inline-size: $text-l-length;
+      } @else if $size == xl {
+        line-height: $text-xl-lh;
+        max-inline-size: $text-xl-length;
+      } @else if $size == xxl {
+        line-height: $text-xxl-lh;
+        max-inline-size: $text-xxl-length;
+      }
+    }
+  }

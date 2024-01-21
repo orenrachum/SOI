@@ -1,0 +1,152 @@
+// Master Button
+@mixin button() {
+  //Global
+  padding-block: var(--btn-padding-block);
+  padding-inline: var(--btn-padding-inline);
+  min-inline-size: var(--btn-min-width);
+  line-height: var(--btn-line-height);
+  @if $option-btn-text-size == on {
+    font-size: $text-m-pure;
+    font-size: fluidCalc($btn-text-min, $btn-text-max);
+    font-size: fluidClamp($btn-text-min, $btn-text-max);
+  } @else {
+    font-size: var(--btn-font-size, var(--text-m));
+  }
+  font-weight: var(--btn-font-weight);
+  font-style: var(--btn-font-style);
+  text-decoration: var(--btn-text-decoration);
+  text-transform: var(--btn-text-transform);
+  letter-spacing: var(--btn-letter-spacing);
+  border-width: var(--btn-border-width);
+  border-style: var(--btn-border-style);
+  border-radius: var(--btn-border-radius);
+  display: var(--btn-display, inline-flex);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  // Unique
+  background: var(--btn-background);
+  color: var(--btn-text-color);
+  border-color: var(--btn-border-color);
+  transition: all var(--btn-transition-duration) ease;
+
+  &:hover {
+    background: var(--btn-background-hover);
+    border-color: var(--btn-border-color-hover);
+    color: var(--btn-text-color-hover);
+    text-decoration: var(--btn-text-decoration-hover);
+  }
+
+  &:focus {
+    @include default-focus-style(#{$focus-style});
+  }
+
+  &.btn--outline {
+    background: transparent;
+    border-width: var(--btn-outline-border-width);
+    @if $btn-border-width < $btn-outline-border-width {
+      padding-block: calc(var(--btn-padding-block) - (var(--btn-outline-border-width) - var(--btn-border-width)));
+    }
+    @if $btn-border-width > $btn-outline-border-width {
+      padding-block: calc(var(--btn-padding-block) + (var(--btn-border-width) - var(--btn-outline-border-width)));
+    }
+    color: var(--btn-outline-text-color);
+
+    &:hover {
+      background: var(--btn-outline-background-hover);
+      color: var(--btn-outline-text-color-hover);
+      border-color: var(--btn-outline-border-hover);
+    }
+  }
+}
+
+// Load Buttons (Internal)
+@mixin load-buttons() {
+  // Apply global button styles to all button classes
+  #{$btnClasses} {
+    @include button();
+  }
+
+  // Generate Buttons
+  @each $btnColor, $btnProps in $buttons {
+    .btn--#{$btnColor} {
+      @each $prop, $value in $btnProps {
+        --#{$prop}: #{$value};
+      }
+    }
+  }
+
+  // Generage Button Size Utilities
+  @each $size, $extension in $sizeExtensions {
+    .btn--#{$extension} {
+      font-size: var(--text-#{$extension});
+    }
+  }
+  
+  .btn--clear {
+    background: none;
+    border: none;
+  }
+}
+  
+
+
+
+
+
+
+
+// Needs inspection for potential removal
+  @mixin outline-btn-default {
+    padding: var(--btn-padding-block) var(--btn-padding-inline);
+    border-width: var(--btn-outline-border-width);
+    border-radius: var(--btn-radius);
+    text-transform: var(--btn-text-transform);
+    font-weight: var(--btn-font-weight);
+  }
+  @mixin btn-primary {
+    background-color: $btn-primary-bg;
+    color: $btn-primary-text;
+    padding: $btn-padding-block $btn-padding-inline;
+    border-width: $btn-border-width;
+    border-color: $btn-primary-border-color;
+    border-radius: $btn-border-radius;
+    text-transform: $btn-text-transform;
+    letter-spacing: $btn-letter-spacing;
+    font-weight: $btn-font-weight;
+    @if $option-btn-text-size == on {
+      font-size: $text-m-pure;
+      font-size: fluidCalc($btn-text-min, $btn-text-max);
+      font-size: fluidClamp($btn-text-min, $btn-text-max);
+    } @else {
+      font-size: $text-m-pure;
+      font-size: fluidCalc($text-m-min, $text-m-max);
+      font-size: fluidClamp($text-m-min, $text-m-max);
+    }
+  }
+  @mixin if-btn-text-size-on {
+    @if $btn-text-size-option == on {
+      @content;
+    }
+  }
+  @mixin btn-primary-hover {
+    border-width: $btn-border-width;
+    background-color: $btn-primary-hover;
+    color: $btn-primary-hover-text;
+    border-color: $btn-primary-hover-border-color;
+  }
+  @mixin btn-default { // Deprecated
+    padding: var(--btn-padding-block) var(--btn-padding-inline);
+    border-width: var(--btn-border-width);
+    border-radius: var(--btn-radius);
+    text-transform: var(--btn-text-transform);
+    -webkit-text-decoration: var(--btn-text-decoration);
+    text-decoration: var(--btn-text-decoration);
+    letter-spacing: var(--btn-letter-spacing);
+    font-weight: var(--btn-font-weight);
+    font-style: var(--btn-font-style);
+    min-inline-size: var(--btn-min-width);
+    line-height: var(--btn-line-height);
+    justify-content: center;
+    text-align: center;
+  }

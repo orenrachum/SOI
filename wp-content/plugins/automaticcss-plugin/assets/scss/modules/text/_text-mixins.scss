@@ -1,0 +1,18 @@
+// Text
+@mixin fluid-text($pure, $min, $max) {
+    font-size: #{$pure}rem;
+    font-size: fluidCalc($min, $max);
+    font-size: fluidClamp($min, $max);
+  }
+  
+  @mixin map-get-fluid-text($extension) {
+    font-size: map-get(map-get($textSizing, pure), text-#{$extension}-pure);
+    font-size: map-get(map-get($textSizing, calc), text-#{$extension}-calc);
+    font-size: map-get(map-get($textSizing, clamp), text-#{$extension}-clamp);
+  }
+  
+  @mixin map-get-fluid-heading($extension) {
+    font-size: map-get(map-get($headingSizes, pure), #{$extension}-pure);
+    font-size: map-get(map-get($headingSizes, calc), #{$extension}-calc);
+    font-size: map-get(map-get($headingSizes, clamp), #{$extension}-clamp);
+  }

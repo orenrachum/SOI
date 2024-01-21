@@ -1,0 +1,15 @@
+@include if-builders-off {
+    .link--skip {
+      position: absolute;
+      inset-block-start: 1rem;
+      inset-inline-start: 1rem;
+      transform: translateY(-250%);
+      @include button;
+      background: $btn-action-bg;
+      color: $btn-action-text;
+    }
+  
+    .link--skip:focus {
+      transform: translateY(0);
+    }
+  }

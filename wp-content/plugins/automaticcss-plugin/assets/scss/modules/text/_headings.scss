@@ -1,0 +1,29 @@
+@each $size in $headingExtensions {
+    .h--#{$size} {
+      @if $size == "6" {
+        @include map-get-fluid-heading(h6);
+        line-height: $h6-lh;
+        max-inline-size: $h6-line-length;
+      } @else if $size == "5" {
+        @include map-get-fluid-heading(h5);
+        line-height: $h5-lh;
+        max-inline-size: $h5-line-length;
+      } @else if $size == "4" {
+        @include map-get-fluid-heading(h4);
+        line-height: $h4-lh;
+        max-inline-size: $h4-line-length;
+      } @else if $size == "3" {
+        @include map-get-fluid-heading(h3);
+        line-height: $h3-lh;
+        max-inline-size: $h3-line-length;
+      } @else if $size == "2" {
+        @include map-get-fluid-heading(h2);
+        line-height: $h2-lh;
+        max-inline-size: $h2-line-length;
+      } @else if $size == "1" {
+        @include map-get-fluid-heading(h1);
+        line-height: $h1-lh;
+        max-inline-size: $heading-line-length;
+      }
+    }
+  }

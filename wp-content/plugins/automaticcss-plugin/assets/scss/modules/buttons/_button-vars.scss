@@ -1,0 +1,128 @@
+// Global
+$btn-border-width: 0.25rem !default;
+$btn-outline-border-width: 0.25rem !default;
+$btn-border-style: solid !default;
+$btn-border-radius: 0.5em !default;
+$btn-padding-block: 1em !default;
+$btn-padding-inline: 1.5em !default;
+$btn-text-transform: none !default;
+$btn-font-style: normal !default;
+$option-btn-text-size: off !default;
+$btn-text-min: $text-m-min !default;
+$btn-text-max: $text-m-max !default;
+$btn-letter-spacing: 0 !default;
+$btn-line-height: 1.2 !default;
+$btn-text-decoration: none !default;
+$btn-text-decoration-hover: none !default;
+$btn-font-weight: 400 !default;
+$btn-min-width: append-rem(20) !default;
+$btn-transition-duration: .3s !default;
+
+// Action Defaults
+$option-action-btn: on !default;
+
+$btn-action-bg: var(--action) !default;
+$btn-action-hover: var(--action-hover) !default;
+$btn-action-text: var(--action-ultra-light) !default;
+$btn-action-hover-text: var(--action-ultra-light) !default;
+$btn-action-border-color: var(--action) !default;
+$btn-action-hover-border-color: var(--action-hover) !default;
+$action-outline-btn-text: var(--action) !default;
+$action-outline-hover-text: var(--action-ultra-light) !default;
+$btn-action-outline-background-hover: var(--action-hover) !default;
+$btn-action-outline-border-hover: var(--action-hover) !default;
+$btn-action-focus-color: var(--action-dark) !default;
+
+// Primary Defaults
+$option-primary-btn: on !default;
+
+$btn-primary-bg: var(--primary) !default;
+$btn-primary-hover: var(--primary-hover) !default;
+$btn-primary-text: var(--primary-ultra-light) !default;
+$btn-primary-hover-text: var(--primary-ultra-light) !default;
+$btn-primary-border-color: var(--primary) !default;
+$btn-primary-hover-border-color: var(--primary-hover) !default;
+$primary-outline-btn-text: var(--primary) !default;
+$primary-outline-hover-text: var(--primary-ultra-light) !default;
+$btn-primary-outline-background-hover: var(--primary-hover) !default;
+$btn-primary-outline-border-hover: var(--primary-hover) !default;
+$btn-primary-focus-color: var(--primary-dark) !default;
+
+// Secondary Defaults
+$option-secondary-btn: on !default;
+
+$btn-secondary-bg: var(--secondary) !default;
+$btn-secondary-hover: var(--secondary-hover) !default;
+$btn-secondary-text: var(--secondary-ultra-light) !default;
+$btn-secondary-hover-text: var(--secondary-ultra-light) !default;
+$btn-secondary-border-color: var(--secondary) !default;
+$btn-secondary-hover-border-color: var(--secondary-hover) !default;
+$secondary-outline-btn-text: var(--secondary) !default;
+$secondary-outline-hover-text: var(--secondary-ultra-light) !default;
+$btn-secondary-outline-background-hover: var(--secondary-hover) !default;
+$btn-secondary-outline-border-hover: var(--secondary-hover) !default;
+$btn-secondary-focus-color: var(--secondary-dark) !default;
+
+//Accent Defaults
+$option-accent-btn: on !default;
+
+$btn-accent-bg: var(--accent) !default;
+$btn-accent-hover: var(--accent-hover) !default;
+$btn-accent-text: var(--accent-ultra-light) !default;
+$btn-accent-hover-text: var(--accent-ultra-light) !default;
+$btn-accent-border-color: var(--accent) !default;
+$btn-accent-hover-border-color: var(--accent-hover) !default;
+$accent-outline-btn-text: var(--accent) !default;
+$accent-outline-hover-text: var(--accent-ultra-light) !default;
+$btn-accent-outline-background-hover: var(--accent-hover) !default;
+$btn-accent-outline-border-hover: var(--accent-hover) !default;
+$btn-accent-focus-color: var(--accent-dark) !default;
+
+// Base Defaults
+$option-base-btn: on !default;
+
+$btn-base-bg: var(--base) !default;
+$btn-base-hover: var(--base-hover) !default;
+$btn-base-text: var(--base-ultra-light) !default;
+$btn-base-hover-text: var(--base-ultra-light) !default;
+$btn-base-border-color: var(--base) !default;
+$btn-base-hover-border-color: var(--base-hover) !default;
+$base-outline-btn-text: var(--base) !default;
+$base-outline-hover-text: var(--base-ultra-light) !default;
+$btn-base-outline-background-hover: var(--base-hover) !default;
+$btn-base-outline-border-hover: var(--base-hover) !default;
+$btn-base-focus-color: var(--base-dark) !default;
+
+// Black Defaults
+$option-black-btn: on !default;
+
+$btn-black-bg: var(--black) !default;
+$btn-black-hover: var(--primary-hover) !default;
+$btn-black-text: var(--white) !default;
+$btn-black-hover-text: var(--white) !default;
+$btn-black-border-color: var(--black) !default;
+$btn-black-hover-border-color: var(--primary-hover) !default;
+$black-outline-btn-text: var(--black) !default;
+$black-outline-hover-text: var(--primary-ultra-light) !default;
+$btn-black-outline-background-hover: var(--black-hover) !default;
+$btn-black-outline-border-hover: var(--black-hover) !default;
+$btn-black-focus-color: var(--action) !default;
+
+// White Defaults
+$option-white-btn: on !default;
+
+$btn-white-bg: var(--white) !default;
+$btn-white-hover: var(--black) !default;
+$btn-white-text: var(--black) !default;
+$btn-white-hover-text: var(--white) !default;
+$btn-white-border-color: var(--white) !default;
+$btn-white-hover-border-color: var(--black) !default;
+$white-outline-btn-text: var(--white) !default;
+$white-outline-hover-text: var(--black) !default;
+$btn-white-outline-background-hover: var(--white) !default;
+$btn-white-outline-border-hover: var(--white) !default;
+$btn-white-focus-color: var(--action) !default;
+
+// Link Style Defaults
+$link-color: var(--action) !default;
+$link-color-hover: var(--action-hover) !default;

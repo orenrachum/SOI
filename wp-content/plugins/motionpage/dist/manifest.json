@@ -1,0 +1,64 @@
+{
+  "221.2da318c8.js": "221.2da318c8.js",
+  "238.7a7168e9.js": "238.7a7168e9.js",
+  "361.js": "361.js",
+  "454.e7338752.js": "454.e7338752.js",
+  "462.21e34055.js": "462.21e34055.js",
+  "522.77b626bd.js": "522.77b626bd.js",
+  "786.44c6515c.js": "786.44c6515c.js",
+  "ImageSequence.js": "ImageSequence.js",
+  "ImageSequenceDebug.js": "ImageSequenceDebug.js",
+  "MouseMove.js": "MouseMove.js",
+  "Select-a221b56b.esm.js": "Select-a221b56b.esm.js",
+  "embed.css": "embed365eb13e.css",
+  "embed.js": "embed.js",
+  "entrypoints": {
+    "main": {
+      "assets": {
+        "js": [
+          "runtime-main.js",
+          "index.js",
+          "index.mjs.js",
+          "i18next.js",
+          "floating-ui.react.mjs.js",
+          "Select-a221b56b.esm.js",
+          "react-dom.production.min.js",
+          "lzutf8.js",
+          "361.js",
+          "main.js"
+        ],
+        "css": [
+          "main6991c950.css"
+        ]
+      }
+    },
+    "embed": {
+      "assets": {
+        "js": [
+          "runtime-embed.js",
+          "embed.js"
+        ],
+        "css": [
+          "embed365eb13e.css"
+        ]
+      }
+    }
+  },
+  "floating-ui.react.mjs.js": "floating-ui.react.mjs.js",
+  "i18next.js": "i18next.js",
+  "index.js": "index.js",
+  "index.mjs.js": "index.mjs.js",
+  "inter-cyrillic-ext-wght-normal.woff2": "92dcb004dd66a14761da.woff2",
+  "inter-cyrillic-wght-normal.woff2": "dd1eb0afa10711830d27.woff2",
+  "inter-greek-ext-wght-normal.woff2": "f8ed8c6b512a482bd1ae.woff2",
+  "inter-greek-wght-normal.woff2": "8cf014c12c3518f736ab.woff2",
+  "inter-latin-ext-wght-normal.woff2": "fbd6dc6ea3a2a849b6fc.woff2",
+  "inter-latin-wght-normal.woff2": "e62404dc3261fb537f3a.woff2",
+  "inter-vietnamese-wght-normal.woff2": "03627a8b5fe27d055e5c.woff2",
+  "lzutf8.js": "lzutf8.js",
+  "main.css": "main6991c950.css",
+  "main.js": "main.js",
+  "react-dom.production.min.js": "react-dom.production.min.js",
+  "runtime-embed.js": "runtime-embed.js",
+  "runtime-main.js": "runtime-main.js"
+}

@@ -1,0 +1,36 @@
+body.bricks-is-frontend {
+  @include focus-styles;
+}
+
+// Skip Link
+
+.skip-link,
+.link--skip {
+  position: absolute;
+  inset-block-start: 1rem;
+  inset-inline-start: 1rem;
+  transform: translateY(-250%);
+  @include button;
+  background: $btn-action-bg;
+  color: $btn-action-text;
+  display: inline-flex;
+
+  &:focus {
+    transform: translateY(0);
+  }
+
+  &:hover {
+    background-color: $btn-action-hover;
+    color: $btn-action-hover-text;
+  }
+}
+
+// Hidden Accessible
+
+.bricks-area .hidden-accessible {
+  @include hidden-accessible-badge;
+}
+
+// Clickable Parent
+
+@include load-clickable-parent(".bricks-area");

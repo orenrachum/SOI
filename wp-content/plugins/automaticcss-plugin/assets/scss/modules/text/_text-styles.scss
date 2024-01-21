@@ -1,0 +1,5 @@
+@each $style, $value in $textStyles {
+    .text--#{$style} {
+      font-style: $value;
+    }
+  }

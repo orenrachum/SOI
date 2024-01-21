@@ -1,0 +1,65 @@
+@mixin overlayBefore {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@mixin overlay($background) {
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    background: #{$background};
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+// Create a clean string of all overlay classes for assigning shared styles
+// $overlayClasses: "";
+// @each $color-name, $color-value in $trans-colors {
+//     $overlayClasses: $overlayClasses + ".overlay--#{$color-name}, ";
+// }
+// $overlayClasses: unquote(str-slice($overlayClasses, 1, -2));
+
+@if $option-overlays == on {
+
+  [class*="overlay--"] {
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      content: "";
+      background: var(--overlay-background);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+
+  @each $color-name, $color-value in $trans-colors {
+      .overlay--#{$color-name} {
+        --overlay-background: var(--#{$color-name});
+      }
+  }
+}
+
+// Add support for overlays on figure elements
+
+figure[class*="overlay--"] {
+  &::before {
+    z-index: 0;
+  }
+}

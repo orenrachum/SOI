@@ -1,0 +1,27 @@
+@if $option-balance-text == on {
+    p:where(:only-of-type), li:not(nav li, nav a), blockquote {
+      text-wrap: balance;
+    }
+  }
+  @if $option-balance-headings == on {
+    h1,h2,h3,h4,h5,h6 {
+      text-wrap: balance;
+    }
+  }
+  
+  .balance {
+    text-wrap: balance;
+  
+    p, li, blockquote, h1, h2, h3, h4, h5, h6 {
+      text-wrap: balance;
+    }
+  
+  }
+  
+  .unbalance {
+    text-wrap: unset;
+  
+    p, li, blockquote, h1, h2, h3, h4, h5, h6 {
+      text-wrap: unset;
+    }
+  }

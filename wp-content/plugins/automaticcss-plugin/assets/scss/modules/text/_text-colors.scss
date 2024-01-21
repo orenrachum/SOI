@@ -1,0 +1,7 @@
+@if $option-text-color == on {
+    @each $color-name, $color-value in $core-colors {
+      .text--#{$color-name} {
+          color: var(--#{$color-name});
+      }
+    }
+  }

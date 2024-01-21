@@ -1,0 +1,11 @@
+// GENERATE BUTTON COLORS & OUTLINE BUTTONS
+// Gutenberg support requires us to load button styling within
+// the Gutenberg overrides stylesheet.
+
+@if $option-buttons == on 
+and $option-gutenberg-enable == off 
+and $option-generate-blocks == off {
+  @include if-builders-off {
+    @include load-buttons;
+  }
+}

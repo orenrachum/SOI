@@ -1,0 +1,50 @@
+// Body Styling
+$device-bg-color: null !default;
+$body-max-width: null !default;
+$body-box-shadow: null !default;
+$body-margin-top: null !default;
+$body-border-color: null !default;
+$body-border-style: null !default;
+$body-border-width: null !default;
+$body-border-radius: null !default;
+
+
+// Focus Styles
+$focus-style: outline !default;
+$focus-color: var(--action) !default;
+$focus-offset: 0.25em !default;
+$focus-width: .2rem !default;
+
+// Header Styles
+$header-height-xxl: 0 !default;
+$header-height: 0 !default; // Base
+$header-height-xl: 0 !default;
+$header-height-l: 0 !default;
+$header-height-m: 0 !default;
+$header-height-s: 0 !default;
+$header-height-xs: 0 !default;
+$option-offset-page-content: off !default;
+
+// Scroll Styles
+$scroll-margin-xxl: 0 !default;
+$scroll-margin: 0 !default; // Base
+$scroll-margin-xl: 0 !default;
+$scroll-margin-l: 0 !default;
+$scroll-margin-m: 0 !default;
+$scroll-margin-s: 0 !default;
+$scroll-margin-xs: 0 !default;
+
+// Combined Offset
+$offset-xxl: $scroll-margin-xxl + $header-height-xxl;
+$offset: $scroll-margin + $header-height; // Base
+$offset-xl: $scroll-margin-xl + $header-height-xl;
+$offset-l: $scroll-margin-l + $header-height-l;
+$offset-m: $scroll-margin-m + $header-height-m;
+$offset-s: $scroll-margin-s + $header-height-s;
+$offset-xs: $scroll-margin-s + $header-height-xs;
+
+// Selection Styles
+$selection-bg: null !default;
+$selection-text: null !default;
+$selection-bg-alt: null !default;
+$selection-text-alt: null !default;

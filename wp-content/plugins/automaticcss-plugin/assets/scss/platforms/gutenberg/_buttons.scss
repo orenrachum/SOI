@@ -1,0 +1,49 @@
+@if $option-buttons == on and $option-gutenberg-enable == on and $option-generate-blocks == off {
+    @each $btnColor, $btnProps in $buttons {
+      .btn--#{$btnColor} {
+        @each $prop, $value in $btnProps {
+          --#{$prop}: #{$value};
+        }
+      }
+    }
+      @each $buttonColor, $buttonProps in $buttons {
+        .btn--#{$buttonColor}:not(.wp-block-button),
+        .wp-block-button.btn--#{$buttonColor} > .wp-block-button__link,
+        .wp-block-button.btn--#{$buttonColor} > a {
+            @include button();
+        }
+      }
+  
+      // GENERATE BUTTON SIZES
+      @each $size, $extension in $sizeExtensions {
+        .btn--#{$extension}:not(.wp-block-button),
+        .wp-block-button.btn--#{$extension} > a,
+        .wp-block-button.btn--#{$extension} > .wp-block-button__link {
+          @include button;
+          @if $size == xs {
+            @include map-get-fluid-text(xs);
+          } @else if $size == s {
+            @include map-get-fluid-text(s);
+          } @else if $size == m {
+            @include map-get-fluid-text(m);
+          } @else if $size == l {
+            @include map-get-fluid-text(l);
+          } @else if $size == xl {
+            @include map-get-fluid-text(xl);
+          } @else if $size == xxl {
+            @include map-get-fluid-text(xxl);
+          }
+          cursor: pointer;
+        }
+      }
+  
+      a[class*="btn--"] {
+        display: inline-flex;
+      }
+  
+      .btn--clear {
+        background: none;
+        border: none;
+      }
+  }
+  

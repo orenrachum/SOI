@@ -1,0 +1,15 @@
+//GENERATE ROUNDED CLASSES
+@if $option-rounded == on {
+  @each $size, $value in $radius {
+    .radius--#{$size} {
+      border-radius: var(--radius-#{$size});
+    }
+  }
+  // Deprecated in 2.7
+  // Move behind deprecated control in 2.8+
+  @each $size, $value in $radius {
+    .rounded--#{$size} {
+      border-radius: #{$value};
+    }
+  }
+}

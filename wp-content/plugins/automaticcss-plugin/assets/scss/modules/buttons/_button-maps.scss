@@ -1,0 +1,125 @@
+$buttons: (
+  "action": (
+    btn-background: $btn-action-bg,
+    btn-background-hover: $btn-action-hover,
+    btn-text-color: $btn-action-text,
+    btn-text-color-hover: $btn-action-hover-text,
+    btn-border-color: $btn-action-border-color,
+    btn-border-color-hover: $btn-action-hover-border-color,
+    btn-outline-background-hover: $btn-action-outline-background-hover,
+    btn-outline-border-hover: $btn-action-outline-border-hover,
+    btn-outline-text-color: $action-outline-btn-text,
+    btn-outline-text-color-hover: $action-outline-hover-text,
+    focus-color: $btn-action-focus-color,
+  ),
+  "primary": (
+    btn-background: $btn-primary-bg,
+    btn-background-hover: $btn-primary-hover,
+    btn-text-color: $btn-primary-text,
+    btn-text-color-hover: $btn-primary-hover-text,
+    btn-border-color: $btn-primary-border-color,
+    btn-border-color-hover: $btn-primary-hover-border-color,
+    btn-outline-background-hover: $btn-primary-outline-background-hover,
+    btn-outline-border-hover: $btn-primary-outline-border-hover,
+    btn-outline-text-color: $primary-outline-btn-text,
+    btn-outline-text-color-hover: $primary-outline-hover-text,
+    focus-color: $btn-primary-focus-color,
+  ),
+  "secondary": (
+    btn-background: $btn-secondary-bg,
+    btn-background-hover: $btn-secondary-hover,
+    btn-text-color: $btn-secondary-text,
+    btn-text-color-hover: $btn-secondary-hover-text,
+    btn-border-color: $btn-secondary-border-color,
+    btn-border-color-hover: $btn-secondary-hover-border-color,
+    btn-outline-background-hover: $btn-secondary-outline-background-hover,
+    btn-outline-border-hover: $btn-secondary-outline-border-hover,
+    btn-outline-text-color: $secondary-outline-btn-text,
+    btn-outline-text-color-hover: $secondary-outline-hover-text,
+    focus-color: $btn-secondary-focus-color,
+  ),
+  "accent": (
+    btn-background: $btn-accent-bg,
+    btn-background-hover: $btn-accent-hover,
+    btn-text-color: $btn-accent-text,
+    btn-text-color-hover: $btn-accent-hover-text,
+    btn-border-color: $btn-accent-border-color,
+    btn-border-color-hover: $btn-accent-hover-border-color,
+    btn-outline-background-hover: $btn-accent-outline-background-hover,
+    btn-outline-border-hover: $btn-accent-outline-border-hover,
+    btn-outline-text-color: $accent-outline-btn-text,
+    btn-outline-text-color-hover: $accent-outline-hover-text,
+    focus-color: $btn-accent-focus-color,
+  ),
+  "base": (
+    btn-background: $btn-base-bg,
+    btn-background-hover: $btn-base-hover,
+    btn-text-color: $btn-base-text,
+    btn-text-color-hover: $btn-base-hover-text,
+    btn-border-color: $btn-base-border-color,
+    btn-border-color-hover: $btn-base-hover-border-color,
+    btn-outline-background-hover: $btn-base-outline-background-hover,
+    btn-outline-border-hover: $btn-base-outline-border-hover,
+    btn-outline-text-color: $base-outline-btn-text,
+    btn-outline-text-color-hover: $base-outline-hover-text,
+    focus-color: $btn-base-focus-color,
+  ),
+  "black": (
+    btn-background: $btn-black-bg,
+    btn-background-hover: $btn-black-hover,
+    btn-text-color: $btn-black-text,
+    btn-text-color-hover: $btn-black-hover-text,
+    btn-border-color: $btn-black-border-color,
+    btn-border-color-hover: $btn-black-hover-border-color,
+    btn-outline-background-hover: $btn-black-outline-background-hover,
+    btn-outline-border-hover: $btn-black-outline-border-hover,
+    btn-outline-text-color: $black-outline-btn-text,
+    btn-outline-text-color-hover: $black-outline-hover-text,
+    focus-color: $btn-black-focus-color,
+  ),
+  "white": (
+    btn-background: $btn-white-bg,
+    btn-background-hover: $btn-white-hover,
+    btn-text-color: $btn-white-text,
+    btn-text-color-hover: $btn-white-hover-text,
+    btn-border-color: $btn-white-border-color,
+    btn-border-color-hover: $btn-white-hover-border-color,
+    btn-outline-background-hover: $btn-white-outline-background-hover,
+    btn-outline-border-hover: $btn-white-outline-border-hover,
+    btn-outline-text-color: $white-outline-btn-text,
+    btn-outline-text-color-hover: $white-outline-hover-text,
+    focus-color: $btn-white-focus-color,
+  ),
+);
+
+// Create a clean string of all button classes for assigning shared styles
+// E.g. .btn--action, .btn--primary, etc.
+$btnClasses: "";
+@each $btnColor, $btnProps in $buttons {
+    $btnClasses: $btnClasses + ".btn--#{$btnColor}, ";
+}
+$btnClasses: unquote(str-slice($btnClasses, 1, -2));
+
+// Turn on/off button classes
+
+@if $option-action-btn == off or $option-action-clr == off {
+  $buttons: map-remove($buttons, action);
+}
+@if $option-primary-btn == off or $option-primary-clr == off {
+  $buttons: map-remove($buttons, primary);
+}
+@if $option-secondary-btn == off or $option-secondary-clr == off {
+  $buttons: map-remove($buttons, secondary);
+}
+@if $option-accent-btn == off or $option-accent-clr == off {
+  $buttons: map-remove($buttons, accent);
+}
+@if $option-base-btn == off or $option-base-clr == off {
+  $buttons: map-remove($buttons, base);
+}
+@if $option-black-btn == off {
+  $buttons: map-remove($buttons, black);
+}
+@if $option-white-btn == off {
+  $buttons: map-remove($buttons, white);
+}

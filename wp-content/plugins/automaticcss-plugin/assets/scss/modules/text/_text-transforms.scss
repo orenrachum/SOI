@@ -1,0 +1,5 @@
+@each $transform, $value in $textTransforms {
+    .text--#{$transform} {
+      text-transform: $value;
+    }
+  }

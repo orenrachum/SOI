@@ -1,0 +1,1108 @@
+// Create a main colors map
+$colors-alt: (
+  action: (
+    "action-main": (
+      "action": $action-alt-hex,
+      "action-hover":
+        hsl($action-hover-h-alt, $action-hover-s-alt, $action-l-alt * $action-hover-l-alt),
+      "action-ultra-light":
+        hsl($action-ultra-light-h-alt, $action-ultra-light-s-alt, $action-ultra-light-l-alt),
+      "action-light": hsl($action-light-h-alt, $action-light-s-alt, $action-light-l-alt),
+      "action-medium": hsl($action-medium-h-alt, $action-medium-s-alt, $action-medium-l-alt),
+      "action-dark": hsl($action-dark-h-alt, $action-dark-s-alt, $action-dark-l-alt),
+      "action-ultra-dark":
+        hsl($action-ultra-dark-h-alt, $action-ultra-dark-s-alt, $action-ultra-dark-l-alt),
+      "action-comp": hsl($action-h-alt + 180, $action-s-alt, $action-l-alt),
+    ),
+    "action-trans": (
+      "action-trans-10": rgba($action-alt-hex, 0.1),
+      "action-trans-20": rgba($action-alt-hex, 0.2),
+      "action-trans-30": rgba($action-alt-hex, 0.3),
+      "action-trans-40": rgba($action-alt-hex, 0.4),
+      "action-trans-50": rgba($action-alt-hex, 0.5),
+      "action-trans-60": rgba($action-alt-hex, 0.6),
+      "action-trans-70": rgba($action-alt-hex, 0.7),
+      "action-trans-80": rgba($action-alt-hex, 0.8),
+      "action-trans-90": rgba($action-alt-hex, 0.9),
+    ),
+    "action-light-trans": (
+      "action-light-trans-10":
+        hsl($action-light-h-alt, $action-light-s-alt, $action-light-l-alt, 0.1),
+      "action-light-trans-20":
+        hsl($action-light-h-alt, $action-light-s-alt, $action-light-l-alt, 0.2),
+      "action-light-trans-30":
+        hsl($action-light-h-alt, $action-light-s-alt, $action-light-l-alt, 0.3),
+      "action-light-trans-40":
+        hsl($action-light-h-alt, $action-light-s-alt, $action-light-l-alt, 0.4),
+      "action-light-trans-50":
+        hsl($action-light-h-alt, $action-light-s-alt, $action-light-l-alt, 0.5),
+      "action-light-trans-60":
+        hsl($action-light-h-alt, $action-light-s-alt, $action-light-l-alt, 0.6),
+      "action-light-trans-70":
+        hsl($action-light-h-alt, $action-light-s-alt, $action-light-l-alt, 0.7),
+      "action-light-trans-80":
+        hsl($action-light-h-alt, $action-light-s-alt, $action-light-l-alt, 0.8),
+      "action-light-trans-90":
+        hsl($action-light-h-alt, $action-light-s-alt, $action-light-l-alt, 0.9),
+    ),
+    "action-dark-trans": (
+      "action-dark-trans-10":
+        hsl($action-dark-h-alt, $action-dark-s-alt, $action-dark-l-alt, 0.1),
+      "action-dark-trans-20":
+        hsl($action-dark-h-alt, $action-dark-s-alt, $action-dark-l-alt, 0.2),
+      "action-dark-trans-30":
+        hsl($action-dark-h-alt, $action-dark-s-alt, $action-dark-l-alt, 0.3),
+      "action-dark-trans-40":
+        hsl($action-dark-h-alt, $action-dark-s-alt, $action-dark-l-alt, 0.4),
+      "action-dark-trans-50":
+        hsl($action-dark-h-alt, $action-dark-s-alt, $action-dark-l-alt, 0.5),
+      "action-dark-trans-60":
+        hsl($action-dark-h-alt, $action-dark-s-alt, $action-dark-l-alt, 0.6),
+      "action-dark-trans-70":
+        hsl($action-dark-h-alt, $action-dark-s-alt, $action-dark-l-alt, 0.7),
+      "action-dark-trans-80":
+        hsl($action-dark-h-alt, $action-dark-s-alt, $action-dark-l-alt, 0.8),
+      "action-dark-trans-90":
+        hsl($action-dark-h-alt, $action-dark-s-alt, $action-dark-l-alt, 0.9),
+    ),
+    "action-ultra-dark-trans": (
+      "action-ultra-dark-trans-10":
+        hsl(
+          $action-ultra-dark-h-alt,
+          $action-ultra-dark-s-alt,
+          $action-ultra-dark-l-alt,
+          0.1
+        ),
+      "action-ultra-dark-trans-20":
+        hsl(
+          $action-ultra-dark-h-alt,
+          $action-ultra-dark-s-alt,
+          $action-ultra-dark-l-alt,
+          0.2
+        ),
+      "action-ultra-dark-trans-30":
+        hsl(
+          $action-ultra-dark-h-alt,
+          $action-ultra-dark-s-alt,
+          $action-ultra-dark-l-alt,
+          0.3
+        ),
+      "action-ultra-dark-trans-40":
+        hsl(
+          $action-ultra-dark-h-alt,
+          $action-ultra-dark-s-alt,
+          $action-ultra-dark-l-alt,
+          0.4
+        ),
+      "action-ultra-dark-trans-50":
+        hsl(
+          $action-ultra-dark-h-alt,
+          $action-ultra-dark-s-alt,
+          $action-ultra-dark-l-alt,
+          0.5
+        ),
+      "action-ultra-dark-trans-60":
+        hsl(
+          $action-ultra-dark-h-alt,
+          $action-ultra-dark-s-alt,
+          $action-ultra-dark-l-alt,
+          0.6
+        ),
+      "action-ultra-dark-trans-70":
+        hsl(
+          $action-ultra-dark-h-alt,
+          $action-ultra-dark-s-alt,
+          $action-ultra-dark-l-alt,
+          0.7
+        ),
+      "action-ultra-dark-trans-80":
+        hsl(
+          $action-ultra-dark-h-alt,
+          $action-ultra-dark-s-alt,
+          $action-ultra-dark-l-alt,
+          0.8
+        ),
+      "action-ultra-dark-trans-90":
+        hsl(
+          $action-ultra-dark-h-alt,
+          $action-ultra-dark-s-alt,
+          $action-ultra-dark-l-alt,
+          0.9
+        ),
+    ),
+    "action-partials": (
+      "action-hex": $action-alt-hex,
+      "action-hsl": $action-h $action-s $action-l-alt,
+      "action-rgb": $action-r $action-g $action-b-alt,
+      "action-r": $action-r-alt,
+      "action-g": $action-g-alt,
+      "action-b": $action-b-alt,
+      "action-h": $action-h-alt,
+      "action-s": $action-s-alt,
+      "action-l": $action-l-alt,
+      "action-hover-h": $action-hover-h-alt,
+      "action-hover-s": $action-hover-s-alt,
+      "action-hover-l": $action-hover-l-alt,
+      "action-ultra-light-h": $action-ultra-light-h-alt,
+      "action-ultra-light-s": $action-ultra-light-s-alt,
+      "action-ultra-light-l": $action-ultra-light-l-alt,
+      "action-light-h": $action-light-h-alt,
+      "action-light-s": $action-light-s-alt,
+      "action-light-l": $action-light-l-alt,
+      "action-medium-h": $action-medium-h-alt,
+      "action-medium-s": $action-medium-s-alt,
+      "action-medium-l": $action-medium-l-alt,
+      "action-dark-h": $action-dark-h-alt,
+      "action-dark-s": $action-dark-s-alt,
+      "action-dark-l": $action-dark-l-alt,
+      "action-ultra-dark-h": $action-ultra-dark-h-alt,
+      "action-ultra-dark-s": $action-ultra-dark-s-alt,
+      "action-ultra-dark-l": $action-ultra-dark-l-alt,
+      "action-comp-h": $action-h-alt + 180,
+    ),
+  ),
+  primary: (
+    "primary-main": (
+      "primary": $primary-alt-hex,
+      "primary-hover":
+        hsl($primary-hover-h-alt, $primary-hover-s-alt, $primary-l-alt * $primary-hover-l-alt),
+      "primary-ultra-light":
+        hsl(
+          $primary-ultra-light-h-alt,
+          $primary-ultra-light-s-alt,
+          $primary-ultra-light-l-alt
+        ),
+      "primary-light": hsl($primary-light-h-alt, $primary-light-s-alt, $primary-light-l-alt),
+      "primary-medium":
+        hsl($primary-medium-h-alt, $primary-medium-s-alt, $primary-medium-l-alt),
+      "primary-dark": hsl($primary-dark-h-alt, $primary-dark-s-alt, $primary-dark-l-alt),
+      "primary-ultra-dark":
+        hsl($primary-ultra-dark-h-alt, $primary-ultra-dark-s-alt, $primary-ultra-dark-l-alt),
+      "primary-comp": hsl($primary-h-alt + 180, $primary-s-alt, $primary-l-alt),
+    ),
+    "primary-trans": (
+      "primary-trans-10": rgba($primary-alt-hex, 0.1),
+      "primary-trans-20": rgba($primary-alt-hex, 0.2),
+      "primary-trans-30": rgba($primary-alt-hex, 0.3),
+      "primary-trans-40": rgba($primary-alt-hex, 0.4),
+      "primary-trans-50": rgba($primary-alt-hex, 0.5),
+      "primary-trans-60": rgba($primary-alt-hex, 0.6),
+      "primary-trans-70": rgba($primary-alt-hex, 0.7),
+      "primary-trans-80": rgba($primary-alt-hex, 0.8),
+      "primary-trans-90": rgba($primary-alt-hex, 0.9),
+    ),
+    "primary-light-trans": (
+      "primary-light-trans-10":
+        hsl($primary-light-h-alt, $primary-light-s-alt, $primary-light-l-alt, 0.1),
+      "primary-light-trans-20":
+        hsl($primary-light-h-alt, $primary-light-s-alt, $primary-light-l-alt, 0.2),
+      "primary-light-trans-30":
+        hsl($primary-light-h-alt, $primary-light-s-alt, $primary-light-l-alt, 0.3),
+      "primary-light-trans-40":
+        hsl($primary-light-h-alt, $primary-light-s-alt, $primary-light-l-alt, 0.4),
+      "primary-light-trans-50":
+        hsl($primary-light-h-alt, $primary-light-s-alt, $primary-light-l-alt, 0.5),
+      "primary-light-trans-60":
+        hsl($primary-light-h-alt, $primary-light-s-alt, $primary-light-l-alt, 0.6),
+      "primary-light-trans-70":
+        hsl($primary-light-h-alt, $primary-light-s-alt, $primary-light-l-alt, 0.7),
+      "primary-light-trans-80":
+        hsl($primary-light-h-alt, $primary-light-s-alt, $primary-light-l-alt, 0.8),
+      "primary-light-trans-90":
+        hsl($primary-light-h-alt, $primary-light-s-alt, $primary-light-l-alt, 0.9),
+    ),
+    "primary-dark-trans": (
+      "primary-dark-trans-10":
+        hsl($primary-dark-h-alt, $primary-dark-s-alt, $primary-dark-l-alt, 0.1),
+      "primary-dark-trans-20":
+        hsl($primary-dark-h-alt, $primary-dark-s-alt, $primary-dark-l-alt, 0.2),
+      "primary-dark-trans-30":
+        hsl($primary-dark-h-alt, $primary-dark-s-alt, $primary-dark-l-alt, 0.3),
+      "primary-dark-trans-40":
+        hsl($primary-dark-h-alt, $primary-dark-s-alt, $primary-dark-l-alt, 0.4),
+      "primary-dark-trans-50":
+        hsl($primary-dark-h-alt, $primary-dark-s-alt, $primary-dark-l-alt, 0.5),
+      "primary-dark-trans-60":
+        hsl($primary-dark-h-alt, $primary-dark-s-alt, $primary-dark-l-alt, 0.6),
+      "primary-dark-trans-70":
+        hsl($primary-dark-h-alt, $primary-dark-s-alt, $primary-dark-l-alt, 0.7),
+      "primary-dark-trans-80":
+        hsl($primary-dark-h-alt, $primary-dark-s-alt, $primary-dark-l-alt, 0.8),
+      "primary-dark-trans-90":
+        hsl($primary-dark-h-alt, $primary-dark-s-alt, $primary-dark-l-alt, 0.9),
+    ),
+    "primary-ultra-dark-trans": (
+      "primary-ultra-dark-trans-10":
+        hsl(
+          $primary-ultra-dark-h-alt,
+          $primary-ultra-dark-s-alt,
+          $primary-ultra-dark-l-alt,
+          0.1
+        ),
+      "primary-ultra-dark-trans-20":
+        hsl(
+          $primary-ultra-dark-h-alt,
+          $primary-ultra-dark-s-alt,
+          $primary-ultra-dark-l-alt,
+          0.2
+        ),
+      "primary-ultra-dark-trans-30":
+        hsl(
+          $primary-ultra-dark-h-alt,
+          $primary-ultra-dark-s-alt,
+          $primary-ultra-dark-l-alt,
+          0.3
+        ),
+      "primary-ultra-dark-trans-40":
+        hsl(
+          $primary-ultra-dark-h-alt,
+          $primary-ultra-dark-s-alt,
+          $primary-ultra-dark-l-alt,
+          0.4
+        ),
+      "primary-ultra-dark-trans-50":
+        hsl(
+          $primary-ultra-dark-h-alt,
+          $primary-ultra-dark-s-alt,
+          $primary-ultra-dark-l-alt,
+          0.5
+        ),
+      "primary-ultra-dark-trans-60":
+        hsl(
+          $primary-ultra-dark-h-alt,
+          $primary-ultra-dark-s-alt,
+          $primary-ultra-dark-l-alt,
+          0.6
+        ),
+      "primary-ultra-dark-trans-70":
+        hsl(
+          $primary-ultra-dark-h-alt,
+          $primary-ultra-dark-s-alt,
+          $primary-ultra-dark-l-alt,
+          0.7
+        ),
+      "primary-ultra-dark-trans-80":
+        hsl(
+          $primary-ultra-dark-h-alt,
+          $primary-ultra-dark-s-alt,
+          $primary-ultra-dark-l-alt,
+          0.8
+        ),
+      "primary-ultra-dark-trans-90":
+        hsl(
+          $primary-ultra-dark-h-alt,
+          $primary-ultra-dark-s-alt,
+          $primary-ultra-dark-l-alt,
+          0.9
+        ),
+    ),
+    "primary-partials": (
+      "primary-hex": $primary-alt-hex,
+      "primary-hsl": $primary-h $primary-s $primary-l-alt,
+      "primary-rgb": $primary-r $primary-g $primary-b-alt,
+      "primary-r": $primary-r-alt,
+      "primary-g": $primary-g-alt,
+      "primary-b": $primary-b-alt,
+      "primary-h": $primary-h-alt,
+      "primary-s": $primary-s-alt,
+      "primary-l": $primary-l-alt,
+      "primary-hover-h": $primary-hover-h-alt,
+      "primary-hover-s": $primary-hover-s-alt,
+      "primary-hover-l": $primary-hover-l-alt,
+      "primary-ultra-light-h": $primary-ultra-light-h-alt,
+      "primary-ultra-light-s": $primary-ultra-light-s-alt,
+      "primary-ultra-light-l": $primary-ultra-light-l-alt,
+      "primary-light-h": $primary-light-h-alt,
+      "primary-light-s": $primary-light-s-alt,
+      "primary-light-l": $primary-light-l-alt,
+      "primary-medium-h": $primary-medium-h-alt,
+      "primary-medium-s": $primary-medium-s-alt,
+      "primary-medium-l": $primary-medium-l-alt,
+      "primary-dark-h": $primary-dark-h-alt,
+      "primary-dark-s": $primary-dark-s-alt,
+      "primary-dark-l": $primary-dark-l-alt,
+      "primary-ultra-dark-h": $primary-ultra-dark-h-alt,
+      "primary-ultra-dark-s": $primary-ultra-dark-s-alt,
+      "primary-ultra-dark-l": $primary-ultra-dark-l-alt,
+      "primary-comp-h": $primary-h-alt + 180,
+    ),
+  ),
+  secondary: (
+    "secondary-main": (
+      "secondary": $secondary-alt-hex,
+      "secondary-hover":
+        hsl(
+          $secondary-hover-h-alt,
+          $secondary-hover-s-alt,
+          $secondary-l-alt * $secondary-hover-l-alt
+        ),
+      "secondary-ultra-light":
+        hsl(
+          $secondary-ultra-light-h-alt,
+          $secondary-ultra-light-s-alt,
+          $secondary-ultra-light-l-alt
+        ),
+      "secondary-light":
+        hsl($secondary-light-h-alt, $secondary-light-s-alt, $secondary-light-l-alt),
+      "secondary-medium":
+        hsl($secondary-medium-h-alt, $secondary-medium-s-alt, $secondary-medium-l-alt),
+      "secondary-dark":
+        hsl($secondary-dark-h-alt, $secondary-dark-s-alt, $secondary-dark-l-alt),
+      "secondary-ultra-dark":
+        hsl(
+          $secondary-ultra-dark-h-alt,
+          $secondary-ultra-dark-s-alt,
+          $secondary-ultra-dark-l-alt
+        ),
+      "secondary-comp": hsl($secondary-h-alt + 180, $secondary-s-alt, $secondary-l-alt),
+    ),
+    "secondary-trans": (
+      "secondary-trans-10": rgba($secondary-alt-hex, 0.1),
+      "secondary-trans-20": rgba($secondary-alt-hex, 0.2),
+      "secondary-trans-30": rgba($secondary-alt-hex, 0.3),
+      "secondary-trans-40": rgba($secondary-alt-hex, 0.4),
+      "secondary-trans-50": rgba($secondary-alt-hex, 0.5),
+      "secondary-trans-60": rgba($secondary-alt-hex, 0.6),
+      "secondary-trans-70": rgba($secondary-alt-hex, 0.7),
+      "secondary-trans-80": rgba($secondary-alt-hex, 0.8),
+      "secondary-trans-90": rgba($secondary-alt-hex, 0.9),
+    ),
+    "secondary-light-trans": (
+      "secondary-light-trans-10":
+        hsl($secondary-light-h-alt, $secondary-light-s-alt, $secondary-light-l-alt, 0.1),
+      "secondary-light-trans-20":
+        hsl($secondary-light-h-alt, $secondary-light-s-alt, $secondary-light-l-alt, 0.2),
+      "secondary-light-trans-30":
+        hsl($secondary-light-h-alt, $secondary-light-s-alt, $secondary-light-l-alt, 0.3),
+      "secondary-light-trans-40":
+        hsl($secondary-light-h-alt, $secondary-light-s-alt, $secondary-light-l-alt, 0.4),
+      "secondary-light-trans-50":
+        hsl($secondary-light-h-alt, $secondary-light-s-alt, $secondary-light-l-alt, 0.5),
+      "secondary-light-trans-60":
+        hsl($secondary-light-h-alt, $secondary-light-s-alt, $secondary-light-l-alt, 0.6),
+      "secondary-light-trans-70":
+        hsl($secondary-light-h-alt, $secondary-light-s-alt, $secondary-light-l-alt, 0.7),
+      "secondary-light-trans-80":
+        hsl($secondary-light-h-alt, $secondary-light-s-alt, $secondary-light-l-alt, 0.8),
+      "secondary-light-trans-90":
+        hsl($secondary-light-h-alt, $secondary-light-s-alt, $secondary-light-l-alt, 0.9),
+    ),
+    "secondary-dark-trans": (
+      "secondary-dark-trans-10":
+        hsl($secondary-dark-h-alt, $secondary-dark-s-alt, $secondary-dark-l-alt, 0.1),
+      "secondary-dark-trans-20":
+        hsl($secondary-dark-h-alt, $secondary-dark-s-alt, $secondary-dark-l-alt, 0.2),
+      "secondary-dark-trans-30":
+        hsl($secondary-dark-h-alt, $secondary-dark-s-alt, $secondary-dark-l-alt, 0.3),
+      "secondary-dark-trans-40":
+        hsl($secondary-dark-h-alt, $secondary-dark-s-alt, $secondary-dark-l-alt, 0.4),
+      "secondary-dark-trans-50":
+        hsl($secondary-dark-h-alt, $secondary-dark-s-alt, $secondary-dark-l-alt, 0.5),
+      "secondary-dark-trans-60":
+        hsl($secondary-dark-h-alt, $secondary-dark-s-alt, $secondary-dark-l-alt, 0.6),
+      "secondary-dark-trans-70":
+        hsl($secondary-dark-h-alt, $secondary-dark-s-alt, $secondary-dark-l-alt, 0.7),
+      "secondary-dark-trans-80":
+        hsl($secondary-dark-h-alt, $secondary-dark-s-alt, $secondary-dark-l-alt, 0.8),
+      "secondary-dark-trans-90":
+        hsl($secondary-dark-h-alt, $secondary-dark-s-alt, $secondary-dark-l-alt, 0.9),
+    ),
+    "secondary-ultra-dark-trans": (
+      "secondary-ultra-dark-trans-10":
+        hsl(
+          $secondary-ultra-dark-h-alt,
+          $secondary-ultra-dark-s-alt,
+          $secondary-ultra-dark-l-alt,
+          0.1
+        ),
+      "secondary-ultra-dark-trans-20":
+        hsl(
+          $secondary-ultra-dark-h-alt,
+          $secondary-ultra-dark-s-alt,
+          $secondary-ultra-dark-l-alt,
+          0.2
+        ),
+      "secondary-ultra-dark-trans-30":
+        hsl(
+          $secondary-ultra-dark-h-alt,
+          $secondary-ultra-dark-s-alt,
+          $secondary-ultra-dark-l-alt,
+          0.3
+        ),
+      "secondary-ultra-dark-trans-40":
+        hsl(
+          $secondary-ultra-dark-h-alt,
+          $secondary-ultra-dark-s-alt,
+          $secondary-ultra-dark-l-alt,
+          0.4
+        ),
+      "secondary-ultra-dark-trans-50":
+        hsl(
+          $secondary-ultra-dark-h-alt,
+          $secondary-ultra-dark-s-alt,
+          $secondary-ultra-dark-l-alt,
+          0.5
+        ),
+      "secondary-ultra-dark-trans-60":
+        hsl(
+          $secondary-ultra-dark-h-alt,
+          $secondary-ultra-dark-s-alt,
+          $secondary-ultra-dark-l-alt,
+          0.6
+        ),
+      "secondary-ultra-dark-trans-70":
+        hsl(
+          $secondary-ultra-dark-h-alt,
+          $secondary-ultra-dark-s-alt,
+          $secondary-ultra-dark-l-alt,
+          0.7
+        ),
+      "secondary-ultra-dark-trans-80":
+        hsl(
+          $secondary-ultra-dark-h-alt,
+          $secondary-ultra-dark-s-alt,
+          $secondary-ultra-dark-l-alt,
+          0.8
+        ),
+      "secondary-ultra-dark-trans-90":
+        hsl(
+          $secondary-ultra-dark-h-alt,
+          $secondary-ultra-dark-s-alt,
+          $secondary-ultra-dark-l-alt,
+          0.9
+        ),
+    ),
+    "secondary-partials": (
+      "secondary-hex": $secondary-alt-hex,
+      "secondary-hsl": $secondary-h $secondary-s $secondary-l-alt,
+      "secondary-rgb": $secondary-r $secondary-g $secondary-b-alt,
+      "secondary-r": $secondary-r-alt,
+      "secondary-g": $secondary-g-alt,
+      "secondary-b": $secondary-b-alt,
+      "secondary-h": $secondary-h-alt,
+      "secondary-s": $secondary-s-alt,
+      "secondary-l": $secondary-l-alt,
+      "secondary-hover-h": $secondary-hover-h-alt,
+      "secondary-hover-s": $secondary-hover-s-alt,
+      "secondary-hover-l": $secondary-hover-l-alt,
+      "secondary-ultra-light-h": $secondary-ultra-light-h-alt,
+      "secondary-ultra-light-s": $secondary-ultra-light-s-alt,
+      "secondary-ultra-light-l": $secondary-ultra-light-l-alt,
+      "secondary-light-h": $secondary-light-h-alt,
+      "secondary-light-s": $secondary-light-s-alt,
+      "secondary-light-l": $secondary-light-l-alt,
+      "secondary-medium-h": $secondary-medium-h-alt,
+      "secondary-medium-s": $secondary-medium-s-alt,
+      "secondary-medium-l": $secondary-medium-l-alt,
+      "secondary-dark-h": $secondary-dark-h-alt,
+      "secondary-dark-s": $secondary-dark-s-alt,
+      "secondary-dark-l": $secondary-dark-l-alt,
+      "secondary-ultra-dark-h": $secondary-ultra-dark-h-alt,
+      "secondary-ultra-dark-s": $secondary-ultra-dark-s-alt,
+      "secondary-ultra-dark-l": $secondary-ultra-dark-l-alt,
+      "secondary-comp-h": $secondary-h-alt + 180,
+    ),
+  ),
+  accent: (
+    "accent-main": (
+      "accent": $accent-alt-hex,
+      "accent-hover":
+        hsl($accent-hover-h-alt, $accent-hover-s-alt, $accent-l-alt * $accent-hover-l-alt),
+      "accent-ultra-light":
+        hsl($accent-ultra-light-h-alt, $accent-ultra-light-s-alt, $accent-ultra-light-l-alt),
+      "accent-light": hsl($accent-light-h-alt, $accent-light-s-alt, $accent-light-l-alt),
+      "accent-medium": hsl($accent-medium-h-alt, $accent-medium-s-alt, $accent-medium-l-alt),
+      "accent-dark": hsl($accent-dark-h-alt, $accent-dark-s-alt, $accent-dark-l-alt),
+      "accent-ultra-dark":
+        hsl($accent-ultra-dark-h-alt, $accent-ultra-dark-s-alt, $accent-ultra-dark-l-alt),
+      "accent-comp": hsl($accent-h-alt + 180, $accent-s-alt, $accent-l-alt),
+    ),
+    "accent-trans": (
+      "accent-trans-10": rgba($accent-alt-hex, 0.1),
+      "accent-trans-20": rgba($accent-alt-hex, 0.2),
+      "accent-trans-30": rgba($accent-alt-hex, 0.3),
+      "accent-trans-40": rgba($accent-alt-hex, 0.4),
+      "accent-trans-50": rgba($accent-alt-hex, 0.5),
+      "accent-trans-60": rgba($accent-alt-hex, 0.6),
+      "accent-trans-70": rgba($accent-alt-hex, 0.7),
+      "accent-trans-80": rgba($accent-alt-hex, 0.8),
+      "accent-trans-90": rgba($accent-alt-hex, 0.9),
+    ),
+    "accent-light-trans": (
+      "accent-light-trans-10":
+        hsl($accent-light-h-alt, $accent-light-s, $accent-light-l-alt, 0.1),
+      "accent-light-trans-20":
+        hsl($accent-light-h-alt, $accent-light-s, $accent-light-l-alt, 0.2),
+      "accent-light-trans-30":
+        hsl($accent-light-h-alt, $accent-light-s, $accent-light-l-alt, 0.3),
+      "accent-light-trans-40":
+        hsl($accent-light-h-alt, $accent-light-s, $accent-light-l-alt, 0.4),
+      "accent-light-trans-50":
+        hsl($accent-light-h-alt, $accent-light-s, $accent-light-l-alt, 0.5),
+      "accent-light-trans-60":
+        hsl($accent-light-h-alt, $accent-light-s, $accent-light-l-alt, 0.6),
+      "accent-light-trans-70":
+        hsl($accent-light-h-alt, $accent-light-s, $accent-light-l-alt, 0.7),
+      "accent-light-trans-80":
+        hsl($accent-light-h-alt, $accent-light-s, $accent-light-l-alt, 0.8),
+      "accent-light-trans-90":
+        hsl($accent-light-h-alt, $accent-light-s, $accent-light-l-alt, 0.9),
+    ),
+    "accent-dark-trans": (
+      "accent-dark-trans-10":
+        hsl($accent-dark-h-alt, $accent-dark-s-alt, $accent-dark-l-alt, 0.1),
+      "accent-dark-trans-20":
+        hsl($accent-dark-h-alt, $accent-dark-s-alt, $accent-dark-l-alt, 0.2),
+      "accent-dark-trans-30":
+        hsl($accent-dark-h-alt, $accent-dark-s-alt, $accent-dark-l-alt, 0.3),
+      "accent-dark-trans-40":
+        hsl($accent-dark-h-alt, $accent-dark-s-alt, $accent-dark-l-alt, 0.4),
+      "accent-dark-trans-50":
+        hsl($accent-dark-h-alt, $accent-dark-s-alt, $accent-dark-l-alt, 0.5),
+      "accent-dark-trans-60":
+        hsl($accent-dark-h-alt, $accent-dark-s-alt, $accent-dark-l-alt, 0.6),
+      "accent-dark-trans-70":
+        hsl($accent-dark-h-alt, $accent-dark-s-alt, $accent-dark-l-alt, 0.7),
+      "accent-dark-trans-80":
+        hsl($accent-dark-h-alt, $accent-dark-s-alt, $accent-dark-l-alt, 0.8),
+      "accent-dark-trans-90":
+        hsl($accent-dark-h-alt, $accent-dark-s-alt, $accent-dark-l-alt, 0.9),
+    ),
+    "accent-ultra-dark-trans": (
+      "accent-ultra-dark-trans-10":
+        hsl(
+          $accent-ultra-dark-h-alt,
+          $accent-ultra-dark-s-alt,
+          $accent-ultra-dark-l-alt,
+          0.1
+        ),
+      "accent-ultra-dark-trans-20":
+        hsl(
+          $accent-ultra-dark-h-alt,
+          $accent-ultra-dark-s-alt,
+          $accent-ultra-dark-l-alt,
+          0.2
+        ),
+      "accent-ultra-dark-trans-30":
+        hsl(
+          $accent-ultra-dark-h-alt,
+          $accent-ultra-dark-s-alt,
+          $accent-ultra-dark-l-alt,
+          0.3
+        ),
+      "accent-ultra-dark-trans-40":
+        hsl(
+          $accent-ultra-dark-h-alt,
+          $accent-ultra-dark-s-alt,
+          $accent-ultra-dark-l-alt,
+          0.4
+        ),
+      "accent-ultra-dark-trans-50":
+        hsl(
+          $accent-ultra-dark-h-alt,
+          $accent-ultra-dark-s-alt,
+          $accent-ultra-dark-l-alt,
+          0.5
+        ),
+      "accent-ultra-dark-trans-60":
+        hsl(
+          $accent-ultra-dark-h-alt,
+          $accent-ultra-dark-s-alt,
+          $accent-ultra-dark-l-alt,
+          0.6
+        ),
+      "accent-ultra-dark-trans-70":
+        hsl(
+          $accent-ultra-dark-h-alt,
+          $accent-ultra-dark-s-alt,
+          $accent-ultra-dark-l-alt,
+          0.7
+        ),
+      "accent-ultra-dark-trans-80":
+        hsl(
+          $accent-ultra-dark-h-alt,
+          $accent-ultra-dark-s-alt,
+          $accent-ultra-dark-l-alt,
+          0.8
+        ),
+      "accent-ultra-dark-trans-90":
+        hsl(
+          $accent-ultra-dark-h-alt,
+          $accent-ultra-dark-s-alt,
+          $accent-ultra-dark-l-alt,
+          0.9
+        ),
+    ),
+    "accent-partials": (
+      "accent-hex": $accent-alt-hex,
+      "accent-hsl": $accent-h $accent-s $accent-l-alt,
+      "accent-rgb": $accent-r $accent-g $accent-b-alt,
+      "accent-r": $accent-r-alt,
+      "accent-g": $accent-g-alt,
+      "accent-b": $accent-b-alt,
+      "accent-h": $accent-h-alt,
+      "accent-s": $accent-s-alt,
+      "accent-l": $accent-l-alt,
+      "accent-hover-h": $accent-hover-h-alt,
+      "accent-hover-s": $accent-hover-s-alt,
+      "accent-hover-l": $accent-hover-l-alt,
+      "accent-ultra-light-h": $accent-ultra-light-h-alt,
+      "accent-ultra-light-s": $accent-ultra-light-s-alt,
+      "accent-ultra-light-l": $accent-ultra-light-l-alt,
+      "accent-light-h": $accent-light-h-alt,
+      "accent-light-s": $accent-light-s-alt,
+      "accent-light-l": $accent-light-l-alt,
+      "accent-medium-h": $accent-medium-h-alt,
+      "accent-medium-s": $accent-medium-s-alt,
+      "accent-medium-l": $accent-medium-l-alt,
+      "accent-dark-h": $accent-dark-h-alt,
+      "accent-dark-s": $accent-dark-s-alt,
+      "accent-dark-l": $accent-dark-l-alt,
+      "accent-ultra-dark-h": $accent-ultra-dark-h-alt,
+      "accent-ultra-dark-s": $accent-ultra-dark-s-alt,
+      "accent-ultra-dark-l": $accent-ultra-dark-l-alt,
+      "accent-comp-h": $accent-h-alt + 180,
+    ),
+  ),
+  base: (
+    "base-main": (
+      "base": $base-alt-hex,
+      "base-hover": hsl($base-hover-h-alt, $base-hover-s-alt, $base-l-alt * $base-hover-l-alt),
+      "base-ultra-light":
+        hsl($base-ultra-light-h-alt, $base-ultra-light-s-alt, $base-ultra-light-l-alt),
+      "base-light": hsl($base-light-h-alt, $base-light-s-alt, $base-light-l-alt),
+      "base-medium": hsl($base-medium-h-alt, $base-medium-s-alt, $base-medium-l-alt),
+      "base-dark": hsl($base-dark-h-alt, $base-dark-s-alt, $base-dark-l-alt),
+      "base-ultra-dark":
+        hsl($base-ultra-dark-h-alt, $base-ultra-dark-s-alt, $base-ultra-dark-l-alt),
+      "base-comp": hsl($base-h-alt + 180, $base-s-alt, $base-l-alt),
+    ),
+    "base-trans": (
+      "base-trans-10": rgba($base-alt-hex, 0.1),
+      "base-trans-20": rgba($base-alt-hex, 0.2),
+      "base-trans-30": rgba($base-alt-hex, 0.3),
+      "base-trans-40": rgba($base-alt-hex, 0.4),
+      "base-trans-50": rgba($base-alt-hex, 0.5),
+      "base-trans-60": rgba($base-alt-hex, 0.6),
+      "base-trans-70": rgba($base-alt-hex, 0.7),
+      "base-trans-80": rgba($base-alt-hex, 0.8),
+      "base-trans-90": rgba($base-alt-hex, 0.9),
+    ),
+    "base-light-trans": (
+      "base-light-trans-10":
+        hsl($base-light-h-alt, $base-light-s-alt, $base-light-l-alt, 0.1),
+      "base-light-trans-20":
+        hsl($base-light-h-alt, $base-light-s-alt, $base-light-l-alt, 0.2),
+      "base-light-trans-30":
+        hsl($base-light-h-alt, $base-light-s-alt, $base-light-l-alt, 0.3),
+      "base-light-trans-40":
+        hsl($base-light-h-alt, $base-light-s-alt, $base-light-l-alt, 0.4),
+      "base-light-trans-50":
+        hsl($base-light-h-alt, $base-light-s-alt, $base-light-l-alt, 0.5),
+      "base-light-trans-60":
+        hsl($base-light-h-alt, $base-light-s-alt, $base-light-l-alt, 0.6),
+      "base-light-trans-70":
+        hsl($base-light-h-alt, $base-light-s-alt, $base-light-l-alt, 0.7),
+      "base-light-trans-80":
+        hsl($base-light-h-alt, $base-light-s-alt, $base-light-l-alt, 0.8),
+      "base-light-trans-90":
+        hsl($base-light-h-alt, $base-light-s-alt, $base-light-l-alt, 0.9),
+    ),
+    "base-dark-trans": (
+      "base-dark-trans-10": hsl($base-dark-h-alt, $base-dark-s-alt, $base-dark-l-alt, 0.1),
+      "base-dark-trans-20": hsl($base-dark-h-alt, $base-dark-s-alt, $base-dark-l-alt, 0.2),
+      "base-dark-trans-30": hsl($base-dark-h-alt, $base-dark-s-alt, $base-dark-l-alt, 0.3),
+      "base-dark-trans-40": hsl($base-dark-h-alt, $base-dark-s-alt, $base-dark-l-alt, 0.4),
+      "base-dark-trans-50": hsl($base-dark-h-alt, $base-dark-s-alt, $base-dark-l-alt, 0.5),
+      "base-dark-trans-60": hsl($base-dark-h-alt, $base-dark-s-alt, $base-dark-l-alt, 0.6),
+      "base-dark-trans-70": hsl($base-dark-h-alt, $base-dark-s-alt, $base-dark-l-alt, 0.7),
+      "base-dark-trans-80": hsl($base-dark-h-alt, $base-dark-s-alt, $base-dark-l-alt, 0.8),
+      "base-dark-trans-90": hsl($base-dark-h-alt, $base-dark-s-alt, $base-dark-l-alt, 0.9),
+    ),
+    "base-ultra-dark-trans": (
+      "base-ultra-dark-trans-10":
+        hsl($base-ultra-dark-h-alt, $base-ultra-dark-s-alt, $base-ultra-dark-l-alt, 0.1),
+      "base-ultra-dark-trans-20":
+        hsl($base-ultra-dark-h-alt, $base-ultra-dark-s-alt, $base-ultra-dark-l-alt, 0.2),
+      "base-ultra-dark-trans-30":
+        hsl($base-ultra-dark-h-alt, $base-ultra-dark-s-alt, $base-ultra-dark-l-alt, 0.3),
+      "base-ultra-dark-trans-40":
+        hsl($base-ultra-dark-h-alt, $base-ultra-dark-s-alt, $base-ultra-dark-l-alt, 0.4),
+      "base-ultra-dark-trans-50":
+        hsl($base-ultra-dark-h-alt, $base-ultra-dark-s-alt, $base-ultra-dark-l-alt, 0.5),
+      "base-ultra-dark-trans-60":
+        hsl($base-ultra-dark-h-alt, $base-ultra-dark-s-alt, $base-ultra-dark-l-alt, 0.6),
+      "base-ultra-dark-trans-70":
+        hsl($base-ultra-dark-h-alt, $base-ultra-dark-s-alt, $base-ultra-dark-l-alt, 0.7),
+      "base-ultra-dark-trans-80":
+        hsl($base-ultra-dark-h-alt, $base-ultra-dark-s-alt, $base-ultra-dark-l-alt, 0.8),
+      "base-ultra-dark-trans-90":
+        hsl($base-ultra-dark-h-alt, $base-ultra-dark-s-alt, $base-ultra-dark-l-alt, 0.9),
+    ),
+    "base-partials": (
+      "base-hex": $base-alt-hex,
+      "base-hsl": $base-h $base-s $base-l-alt,
+      "base-rgb": $base-r $base-g $base-b-alt,
+      "base-r": $base-r-alt,
+      "base-g": $base-g-alt,
+      "base-b": $base-b-alt,
+      "base-h": $base-h-alt,
+      "base-s": $base-s-alt,
+      "base-l": $base-l-alt,
+      "base-hover-h": $base-hover-h-alt,
+      "base-hover-s": $base-hover-s-alt,
+      "base-hover-l": $base-hover-l-alt,
+      "base-ultra-light-h": $base-ultra-light-h-alt,
+      "base-ultra-light-s": $base-ultra-light-s-alt,
+      "base-ultra-light-l": $base-ultra-light-l-alt,
+      "base-light-h": $base-light-h-alt,
+      "base-light-s": $base-light-s-alt,
+      "base-light-l": $base-light-l-alt,
+      "base-medium-h": $base-medium-h-alt,
+      "base-medium-s": $base-medium-s-alt,
+      "base-medium-l": $base-medium-l-alt,
+      "base-dark-h": $base-dark-h-alt,
+      "base-dark-s": $base-dark-s-alt,
+      "base-dark-l": $base-dark-l-alt,
+      "base-ultra-dark-h": $base-ultra-dark-h-alt,
+      "base-ultra-dark-s": $base-ultra-dark-s-alt,
+      "base-ultra-dark-l": $base-ultra-dark-l-alt,
+      "base-comp-h": $base-h-alt + 180,
+    ),
+  ),
+  neutral: (
+    "neutral-main": (
+      "neutral": $neutral-alt-hex,
+      "neutral-hover":
+        hsl($neutral-hover-h-alt, $neutral-hover-s-alt, $neutral-l-alt * $neutral-hover-l-alt),
+      "neutral-ultra-light":
+        hsl($neutral-ultra-light-h-alt, $neutral-ultra-light-s-alt, $neutral-ultra-light-l-alt),
+      "neutral-light": hsl($neutral-light-h-alt, $neutral-light-s-alt, $neutral-light-l-alt),
+      "neutral-medium": hsl($neutral-medium-h-alt, $neutral-medium-s-alt, $neutral-medium-l-alt),
+      "neutral-dark": hsl($neutral-dark-h-alt, $neutral-dark-s-alt, $neutral-dark-l-alt),
+      "neutral-ultra-dark":
+        hsl($neutral-ultra-dark-h-alt, $neutral-ultra-dark-s-alt, $neutral-ultra-dark-l-alt),
+      "neutral-comp": hsl($neutral-h-alt + 180, $neutral-s-alt, $neutral-l-alt),
+    ),
+    "neutral-trans": (
+      "neutral-trans-10": rgba($neutral-alt-hex, 0.1),
+      "neutral-trans-20": rgba($neutral-alt-hex, 0.2),
+      "neutral-trans-30": rgba($neutral-alt-hex, 0.3),
+      "neutral-trans-40": rgba($neutral-alt-hex, 0.4),
+      "neutral-trans-50": rgba($neutral-alt-hex, 0.5),
+      "neutral-trans-60": rgba($neutral-alt-hex, 0.6),
+      "neutral-trans-70": rgba($neutral-alt-hex, 0.7),
+      "neutral-trans-80": rgba($neutral-alt-hex, 0.8),
+      "neutral-trans-90": rgba($neutral-alt-hex, 0.9),
+    ),
+    "neutral-light-trans": (
+      "neutral-light-trans-10":
+        hsl($neutral-light-h, $neutral-light-s-alt, $neutral-light-l-alt, 0.1),
+      "neutral-light-trans-20":
+        hsl($neutral-light-h, $neutral-light-s-alt, $neutral-light-l-alt, 0.2),
+      "neutral-light-trans-30":
+        hsl($neutral-light-h, $neutral-light-s-alt, $neutral-light-l-alt, 0.3),
+      "neutral-light-trans-40":
+        hsl($neutral-light-h, $neutral-light-s-alt, $neutral-light-l-alt, 0.4),
+      "neutral-light-trans-50":
+        hsl($neutral-light-h, $neutral-light-s-alt, $neutral-light-l-alt, 0.5),
+      "neutral-light-trans-60":
+        hsl($neutral-light-h, $neutral-light-s-alt, $neutral-light-l-alt, 0.6),
+      "neutral-light-trans-70":
+        hsl($neutral-light-h, $neutral-light-s-alt, $neutral-light-l-alt, 0.7),
+      "neutral-light-trans-80":
+        hsl($neutral-light-h, $neutral-light-s-alt, $neutral-light-l-alt, 0.8),
+      "neutral-light-trans-90":
+        hsl($neutral-light-h, $neutral-light-s-alt, $neutral-light-l-alt, 0.9),
+    ),
+    "neutral-dark-trans": (
+      "neutral-dark-trans-10":
+        hsl($neutral-dark-h-alt, $neutral-dark-s-alt, $neutral-dark-l-alt, 0.1),
+      "neutral-dark-trans-20":
+        hsl($neutral-dark-h-alt, $neutral-dark-s-alt, $neutral-dark-l-alt, 0.2),
+      "neutral-dark-trans-30":
+        hsl($neutral-dark-h-alt, $neutral-dark-s-alt, $neutral-dark-l-alt, 0.3),
+      "neutral-dark-trans-40":
+        hsl($neutral-dark-h-alt, $neutral-dark-s-alt, $neutral-dark-l-alt, 0.4),
+      "neutral-dark-trans-50":
+        hsl($neutral-dark-h-alt, $neutral-dark-s-alt, $neutral-dark-l-alt, 0.5),
+      "neutral-dark-trans-60":
+        hsl($neutral-dark-h-alt, $neutral-dark-s-alt, $neutral-dark-l-alt, 0.6),
+      "neutral-dark-trans-70":
+        hsl($neutral-dark-h-alt, $neutral-dark-s-alt, $neutral-dark-l-alt, 0.7),
+      "neutral-dark-trans-80":
+        hsl($neutral-dark-h-alt, $neutral-dark-s-alt, $neutral-dark-l-alt, 0.8),
+      "neutral-dark-trans-90":
+        hsl($neutral-dark-h-alt, $neutral-dark-s-alt, $neutral-dark-l-alt, 0.9),
+    ),
+    "neutral-ultra-dark-trans": (
+      "neutral-ultra-dark-trans-10":
+        hsl($neutral-ultra-dark-h-alt, $neutral-ultra-dark-s-alt, $neutral-ultra-dark-l-alt, 0.1),
+      "neutral-ultra-dark-trans-20":
+        hsl($neutral-ultra-dark-h-alt, $neutral-ultra-dark-s-alt, $neutral-ultra-dark-l-alt, 0.2),
+      "neutral-ultra-dark-trans-30":
+        hsl($neutral-ultra-dark-h-alt, $neutral-ultra-dark-s-alt, $neutral-ultra-dark-l-alt, 0.3),
+      "neutral-ultra-dark-trans-40":
+        hsl($neutral-ultra-dark-h-alt, $neutral-ultra-dark-s-alt, $neutral-ultra-dark-l-alt, 0.4),
+      "neutral-ultra-dark-trans-50":
+        hsl($neutral-ultra-dark-h-alt, $neutral-ultra-dark-s-alt, $neutral-ultra-dark-l-alt, 0.5),
+      "neutral-ultra-dark-trans-60":
+        hsl($neutral-ultra-dark-h-alt, $neutral-ultra-dark-s-alt, $neutral-ultra-dark-l-alt, 0.6),
+      "neutral-ultra-dark-trans-70":
+        hsl($neutral-ultra-dark-h-alt, $neutral-ultra-dark-s-alt, $neutral-ultra-dark-l-alt, 0.7),
+      "neutral-ultra-dark-trans-80":
+        hsl($neutral-ultra-dark-h-alt, $neutral-ultra-dark-s-alt, $neutral-ultra-dark-l-alt, 0.8),
+      "neutral-ultra-dark-trans-90":
+        hsl($neutral-ultra-dark-h-alt, $neutral-ultra-dark-s-alt, $neutral-ultra-dark-l-alt, 0.9),
+    ),
+    "neutral-partials": (
+      "neutral-hex": $neutral-alt-hex,
+      "neutral-hsl": $neutral-h $neutral-s $neutral-l-alt,
+      "neutral-rgb": $neutral-r $neutral-g $neutral-b-alt,
+      "neutral-r": $neutral-r-alt,
+      "neutral-g": $neutral-g-alt,
+      "neutral-b": $neutral-b-alt,
+      "neutral-h": $neutral-h-alt,
+      "neutral-s": $neutral-s-alt,
+      "neutral-l": $neutral-l-alt,
+      "neutral-hover-h": $neutral-hover-h-alt,
+      "neutral-hover-s": $neutral-hover-s-alt,
+      "neutral-hover-l": $neutral-hover-l-alt,
+      "neutral-ultra-light-h": $neutral-ultra-light-h-alt,
+      "neutral-ultra-light-s": $neutral-ultra-light-s-alt,
+      "neutral-ultra-light-l": $neutral-ultra-light-l-alt,
+      "neutral-light-h": $neutral-light-h-alt,
+      "neutral-light-s": $neutral-light-s-alt,
+      "neutral-light-l": $neutral-light-l-alt,
+      "neutral-medium-h": $neutral-medium-h-alt,
+      "neutral-medium-s": $neutral-medium-s-alt,
+      "neutral-medium-l": $neutral-medium-l-alt,
+      "neutral-dark-h": $neutral-dark-h-alt,
+      "neutral-dark-s": $neutral-dark-s-alt,
+      "neutral-dark-l": $neutral-dark-l-alt,
+      "neutral-ultra-dark-h": $neutral-ultra-dark-h-alt,
+      "neutral-ultra-dark-s": $neutral-ultra-dark-s-alt,
+      "neutral-ultra-dark-l": $neutral-ultra-dark-l-alt,
+      "neutral-comp-h": $neutral-h-alt + 180,
+    ),
+  ),
+  shade: (
+    "shade-main": (
+      "shade": $shade-alt-hex,
+      "shade-hover":
+        hsl($shade-hover-h-alt, $shade-hover-s-alt, $shade-l-alt * $shade-hover-l-alt),
+      "shade-ultra-light":
+        hsl($shade-ultra-light-h-alt, $shade-ultra-light-s-alt, $shade-ultra-light-l-alt),
+      "shade-light": hsl($shade-light-h-alt, $shade-light-s-alt, $shade-light-l-alt),
+      "shade-medium": hsl($shade-medium-h-alt, $shade-medium-s-alt, $shade-medium-l-alt),
+      "shade-dark": hsl($shade-dark-h-alt, $shade-dark-s-alt, $shade-dark-l-alt),
+      "shade-ultra-dark":
+        hsl($shade-ultra-dark-h-alt, $shade-ultra-dark-s-alt, $shade-ultra-dark-l-alt),
+      "shade-comp": hsl($shade-h-alt + 180, $shade-s-alt, $shade-l-alt),
+    ),
+    "shade-trans": (
+      "shade-trans-10": rgba($shade-alt-hex, 0.1),
+      "shade-trans-20": rgba($shade-alt-hex, 0.2),
+      "shade-trans-30": rgba($shade-alt-hex, 0.3),
+      "shade-trans-40": rgba($shade-alt-hex, 0.4),
+      "shade-trans-50": rgba($shade-alt-hex, 0.5),
+      "shade-trans-60": rgba($shade-alt-hex, 0.6),
+      "shade-trans-70": rgba($shade-alt-hex, 0.7),
+      "shade-trans-80": rgba($shade-alt-hex, 0.8),
+      "shade-trans-90": rgba($shade-alt-hex, 0.9),
+    ),
+    "shade-light-trans": (
+      "shade-light-trans-10":
+        hsl($shade-light-h, $shade-light-s-alt, $shade-light-l-alt, 0.1),
+      "shade-light-trans-20":
+        hsl($shade-light-h, $shade-light-s-alt, $shade-light-l-alt, 0.2),
+      "shade-light-trans-30":
+        hsl($shade-light-h, $shade-light-s-alt, $shade-light-l-alt, 0.3),
+      "shade-light-trans-40":
+        hsl($shade-light-h, $shade-light-s-alt, $shade-light-l-alt, 0.4),
+      "shade-light-trans-50":
+        hsl($shade-light-h, $shade-light-s-alt, $shade-light-l-alt, 0.5),
+      "shade-light-trans-60":
+        hsl($shade-light-h, $shade-light-s-alt, $shade-light-l-alt, 0.6),
+      "shade-light-trans-70":
+        hsl($shade-light-h, $shade-light-s-alt, $shade-light-l-alt, 0.7),
+      "shade-light-trans-80":
+        hsl($shade-light-h, $shade-light-s-alt, $shade-light-l-alt, 0.8),
+      "shade-light-trans-90":
+        hsl($shade-light-h, $shade-light-s-alt, $shade-light-l-alt, 0.9),
+    ),
+    "shade-dark-trans": (
+      "shade-dark-trans-10":
+        hsl($shade-dark-h-alt, $shade-dark-s-alt, $shade-dark-l-alt, 0.1),
+      "shade-dark-trans-20":
+        hsl($shade-dark-h-alt, $shade-dark-s-alt, $shade-dark-l-alt, 0.2),
+      "shade-dark-trans-30":
+        hsl($shade-dark-h-alt, $shade-dark-s-alt, $shade-dark-l-alt, 0.3),
+      "shade-dark-trans-40":
+        hsl($shade-dark-h-alt, $shade-dark-s-alt, $shade-dark-l-alt, 0.4),
+      "shade-dark-trans-50":
+        hsl($shade-dark-h-alt, $shade-dark-s-alt, $shade-dark-l-alt, 0.5),
+      "shade-dark-trans-60":
+        hsl($shade-dark-h-alt, $shade-dark-s-alt, $shade-dark-l-alt, 0.6),
+      "shade-dark-trans-70":
+        hsl($shade-dark-h-alt, $shade-dark-s-alt, $shade-dark-l-alt, 0.7),
+      "shade-dark-trans-80":
+        hsl($shade-dark-h-alt, $shade-dark-s-alt, $shade-dark-l-alt, 0.8),
+      "shade-dark-trans-90":
+        hsl($shade-dark-h-alt, $shade-dark-s-alt, $shade-dark-l-alt, 0.9),
+    ),
+    "shade-ultra-dark-trans": (
+      "shade-ultra-dark-trans-10":
+        hsl($shade-ultra-dark-h-alt, $shade-ultra-dark-s-alt, $shade-ultra-dark-l-alt, 0.1),
+      "shade-ultra-dark-trans-20":
+        hsl($shade-ultra-dark-h-alt, $shade-ultra-dark-s-alt, $shade-ultra-dark-l-alt, 0.2),
+      "shade-ultra-dark-trans-30":
+        hsl($shade-ultra-dark-h-alt, $shade-ultra-dark-s-alt, $shade-ultra-dark-l-alt, 0.3),
+      "shade-ultra-dark-trans-40":
+        hsl($shade-ultra-dark-h-alt, $shade-ultra-dark-s-alt, $shade-ultra-dark-l-alt, 0.4),
+      "shade-ultra-dark-trans-50":
+        hsl($shade-ultra-dark-h-alt, $shade-ultra-dark-s-alt, $shade-ultra-dark-l-alt, 0.5),
+      "shade-ultra-dark-trans-60":
+        hsl($shade-ultra-dark-h-alt, $shade-ultra-dark-s-alt, $shade-ultra-dark-l-alt, 0.6),
+      "shade-ultra-dark-trans-70":
+        hsl($shade-ultra-dark-h-alt, $shade-ultra-dark-s-alt, $shade-ultra-dark-l-alt, 0.7),
+      "shade-ultra-dark-trans-80":
+        hsl($shade-ultra-dark-h-alt, $shade-ultra-dark-s-alt, $shade-ultra-dark-l-alt, 0.8),
+      "shade-ultra-dark-trans-90":
+        hsl($shade-ultra-dark-h-alt, $shade-ultra-dark-s-alt, $shade-ultra-dark-l-alt, 0.9),
+    ),
+    "shade-partials": (
+      "shade-hex": $shade-alt-hex,
+      "shade-hsl": $shade-h $shade-s $shade-l-alt,
+      "shade-rgb": $shade-r $shade-g $shade-b-alt,
+      "shade-r": $shade-r-alt,
+      "shade-g": $shade-g-alt,
+      "shade-b": $shade-b-alt,
+      "shade-h": $shade-h-alt,
+      "shade-s": $shade-s-alt,
+      "shade-l": $shade-l-alt,
+      "shade-hover-h": $shade-hover-h-alt,
+      "shade-hover-s": $shade-hover-s-alt,
+      "shade-hover-l": $shade-hover-l-alt,
+      "shade-ultra-light-h": $shade-ultra-light-h-alt,
+      "shade-ultra-light-s": $shade-ultra-light-s-alt,
+      "shade-ultra-light-l": $shade-ultra-light-l-alt,
+      "shade-light-h": $shade-light-h-alt,
+      "shade-light-s": $shade-light-s-alt,
+      "shade-light-l": $shade-light-l-alt,
+      "shade-medium-h": $shade-medium-h-alt,
+      "shade-medium-s": $shade-medium-s-alt,
+      "shade-medium-l": $shade-medium-l-alt,
+      "shade-dark-h": $shade-dark-h-alt,
+      "shade-dark-s": $shade-dark-s-alt,
+      "shade-dark-l": $shade-dark-l-alt,
+      "shade-ultra-dark-h": $shade-ultra-dark-h-alt,
+      "shade-ultra-dark-s": $shade-ultra-dark-s-alt,
+      "shade-ultra-dark-l": $shade-ultra-dark-l-alt,
+      "shade-comp-h": $shade-h-alt + 180,
+    ),
+  ),
+  bw: (
+    "bw-main": (
+      "white": #000,
+      "black": #fff,
+    ),
+    "black-trans": (
+      "black-trans-10": rgb(255, 255, 255, 0.1),
+      "black-trans-20": rgb(255, 255, 255, 0.2),
+      "black-trans-30": rgb(255, 255, 255, 0.3),
+      "black-trans-40": rgb(255, 255, 255, 0.4),
+      "black-trans-50": rgb(255, 255, 255, 0.5),
+      "black-trans-60": rgb(255, 255, 255, 0.6),
+      "black-trans-70": rgb(255, 255, 255, 0.7),
+      "black-trans-80": rgb(255, 255, 255, 0.8),
+      "black-trans-90": rgb(255, 255, 255, 0.9),
+    ),
+    "white-trans": (
+      "white-trans-10": hsl(0, 0%, 0%, 0.1),
+      "white-trans-20": hsl(0, 0%, 0%, 0.2),
+      "white-trans-30": hsl(0, 0%, 0%, 0.3),
+      "white-trans-40": hsl(0, 0%, 0%, 0.4),
+      "white-trans-50": hsl(0, 0%, 0%, 0.5),
+      "white-trans-60": hsl(0, 0%, 0%, 0.6),
+      "white-trans-70": hsl(0, 0%, 0%, 0.7),
+      "white-trans-80": hsl(0, 0%, 0%, 0.8),
+      "white-trans-90": hsl(0, 0%, 0%, 0.9),
+    ),
+    "bw-trans": (),
+    "bw-light-trans": (),
+    "bw-dark-trans": (),
+    "bw-ultra-dark-trans": (),
+    "bw-partials": (),
+  ),
+);
+
+// Remove any colors the user turns off
+@if $option-action-clr-alt == off or $option-action-clr == off {
+  $colors-alt: map-remove($colors-alt, action);
+}
+@if $option-primary-clr-alt == off or $option-primary-clr == off {
+  $colors-alt: map-remove($colors-alt, primary);
+}
+@if $option-secondary-clr-alt == off or $option-secondary-clr == off {
+  $colors-alt: map-remove($colors-alt, secondary);
+}
+@if $option-accent-clr-alt == off or $option-accent-clr == off {
+  $colors-alt: map-remove($colors-alt, accent);
+}
+@if $option-base-clr-alt == off or $option-base-clr == off {
+  $colors-alt: map-remove($colors-alt, base);
+}
+@if $option-neutral-clr-alt == off or $option-neutral-clr == off {
+  $colors-alt: map-remove($colors-alt, neutral);
+}
+@if $option-shade-clr-alt == off or $option-shade-clr == off {
+  $colors-alt: map-remove($colors-alt, shade);
+}
+@if $option-neutral-clr-alt == off and $option-shade-clr-alt == off {
+  $colors-alt: map-remove($colors-alt, bw);
+}
+
+$contextualColors-alt: (
+  successSet: (
+    success: $success-alt-hex,
+    success-light: hsl($success-light-h-alt, $success-light-s-alt, $success-light-l-alt),
+    success-dark: hsl($success-dark-h-alt, $success-dark-s-alt, $success-dark-l-alt),
+    success-hover:
+      hsl($success-hover-h-alt, $success-hover-s-alt, $success-l-alt * $success-hover-l-alt),
+  ),
+  dangerSet: (
+    danger: $danger-alt-hex,
+    danger-light: hsl($danger-light-h-alt, $danger-light-s-alt, $danger-light-l-alt),
+    danger-dark: hsl($danger-dark-h-alt, $danger-dark-s-alt, $danger-dark-l-alt),
+    danger-hover:
+      hsl($danger-hover-h-alt, $danger-hover-s-alt, $danger-l-alt * $danger-hover-l-alt),
+  ),
+  warningSet: (
+    warning: $warning-alt-hex,
+    warning-light: hsl($warning-light-h-alt, $warning-light-s-alt, $warning-light-l-alt),
+    warning-dark: hsl($warning-dark-h-alt, $warning-dark-s-alt, $warning-dark-l-alt),
+    warning-hover:
+      hsl($warning-hover-h-alt, $warning-hover-s-alt, $warning-l-alt * $warning-hover-l-alt),
+  ),
+  infoSet: (
+    info: $info-alt-hex,
+    info-light: hsl($info-light-h-alt, $info-light-s-alt, $info-light-l-alt),
+    info-dark: hsl($info-dark-h-alt, $info-dark-s-alt, $info-dark-l-alt),
+    info-hover: hsl($info-hover-h-alt, $info-hover-s-alt, $info-l-alt * $info-hover-l-alt),
+  ),
+);
+
+@if $option-contextual-colors == off {
+  $contextualColors-alt: map-remove($contextualColors-alt, successSet);
+  $contextualColors-alt: map-remove($contextualColors-alt, dangerSet);
+  $contextualColors-alt: map-remove($contextualColors-alt, warningSet);
+  $contextualColors-alt: map-remove($contextualColors-alt, infoSet);
+}
+
+@if $option-contextual-colors-alt == off {
+  $contextualColors-alt: map-remove($contextualColors-alt, successSet);
+  $contextualColors-alt: map-remove($contextualColors-alt, dangerSet);
+  $contextualColors-alt: map-remove($contextualColors-alt, warningSet);
+  $contextualColors-alt: map-remove($contextualColors-alt, infoSet);
+}

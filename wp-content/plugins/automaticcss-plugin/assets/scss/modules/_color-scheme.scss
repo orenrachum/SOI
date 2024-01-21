@@ -1,0 +1,120 @@
+@if $option-color-scheme == on {
+
+    .color-scheme--alt {
+        @each $color, $color-cats in $colors-alt {
+            @each $color-cat, $color-names in $color-cats {
+                @each $color-name, $color-value in $color-names {
+                    --#{$color-name}: #{$color-value};
+                }
+            }
+        }
+        @each $colorName, $colorSet in $contextualColors-alt {
+            @each $colorName, $colorValue in $colorSet {
+              --#{$colorName}: #{$colorValue};
+            }
+          }
+    }
+
+}
+
+
+// Possibly won't need this if we add JS logic on back-end
+// Delete in future
+
+// // Generate correct color scheme
+// @mixin activate-color-scheme {
+//     // Check to see if prefers color scheme is on.
+//     // If it's on, we want to load styles in @prefers.
+//     // If it's off, we want to only load the color-scheme class.
+//     @if $option-prefers-color-scheme == on {
+//         // If prefers-color-scheme is on
+//         @if $website-color-scheme == light {
+//             :root {
+//                 @each $color, $color-cats in $colors {
+//                     @each $color-cat, $color-names in $color-cats {
+//                         @each $color-name, $color-value in $color-names {
+//                             --#{$color-name}: #{$color-value};
+//                         }
+//                     }
+//                 }
+//             }
+//             @media (prefers-color-scheme: dark) {
+//                 :root {
+//                     @each $color, $color-cats in $colors-alt {
+//                         @each $color-cat, $color-names in $color-cats {
+//                             @each $color-name, $color-value in $color-names {
+//                                 --#{$color-name}: #{$color-value};
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//             html.color-scheme--alt {
+//                 @each $color, $color-cats in $colors-alt {
+//                     @each $color-cat, $color-names in $color-cats {
+//                         @each $color-name, $color-value in $color-names {
+//                             --#{$color-name}: #{$color-value};
+//                         }
+//                     }
+//                 }
+//             }
+//         } @else {
+//             :root {
+//                 @each $color, $color-cats in $colors {
+//                     @each $color-cat, $color-names in $color-cats {
+//                         @each $color-name, $color-value in $color-names {
+//                             --#{$color-name}: #{$color-value};
+//                         }
+//                     }
+//                 }
+//             }
+//             @media (prefers-color-scheme: light) {
+//                 :root {
+//                     @each $color, $color-cats in $colors-alt {
+//                         @each $color-cat, $color-names in $color-cats {
+//                             @each $color-name, $color-value in $color-names {
+//                                 --#{$color-name}: #{$color-value};
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//             html.color-scheme--alt {
+//                 @each $color, $color-cats in $colors-alt {
+//                     @each $color-cat, $color-names in $color-cats {
+//                         @each $color-name, $color-value in $color-names {
+//                             --#{$color-name}: #{$color-value};
+//                         }
+//                     }
+//                 }
+//             }
+//         }       
+//     } @else { // If prefers-color-scheme is off.
+//         @if $website-color-scheme == light {
+//                 .prefers-color-scheme--alt {
+//                     @each $color, $color-cats in $colors-alt {
+//                         @each $color-cat, $color-names in $color-cats {
+//                             @each $color-name, $color-value in $color-names {
+//                                 --#{$color-name}: #{$color-value};
+//                             }
+//                         }
+//                     }
+//                 }
+//         } @else {
+//                 .prefers-color-scheme--alt {
+//                     @each $color, $color-cats in $colors-alt {
+//                         @each $color-cat, $color-names in $color-cats {
+//                             @each $color-name, $color-value in $color-names {
+//                                 --#{$color-name}: #{$color-value};
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+// }
+
+// // Conditionally activate mixin for color scheme
+// @if $option-color-scheme == on {
+//     @include activate-color-scheme;
+// }
