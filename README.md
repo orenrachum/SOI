@@ -2,3 +2,5 @@
 
 The *new* website
 
+Built of WP and Bricks
+
